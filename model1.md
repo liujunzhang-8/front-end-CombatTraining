@@ -9,10 +9,17 @@
     __proto__ 隐式原型，指向构造该对象的构造函数（constructor）的原型（prototype）
     prototype 显示原型，指向函数的原型对象
   `对象创建方法`
+    instanceof
+    isPrototypeOf
   `原型链遍历`
+    hasOwnProperty()
+    Object.keys()
+    JavaScript 中唯一两个处理属性并且不会遍历原型链的方法
 ### 2、BOM
   `location`
+
   `navigation`
+    通过 useragent 获取手机品牌型号
   `screen`
   `history`
   `performance`
