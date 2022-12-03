@@ -2,7 +2,9 @@
 
 ### 1、JavaScript 基础
   `基本类型`
+    undefined、 null、 boolean、 number、 string、 object、 symbol
   `引用类型`
+    Boolean、Number、String、Symbol、Object、Array、Map、Set
   `原型`
   `对象创建方法`
   `原型链遍历`
