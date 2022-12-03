@@ -6,6 +6,8 @@
   `引用类型`
     Boolean、Number、String、Symbol、Object、Array、Map、Set
   `原型`
+    __proto__ 隐式原型，指向构造该对象的构造函数（constructor）的原型（prototype）
+    prototype 显示原型，指向函数的原型对象
   `对象创建方法`
   `原型链遍历`
 ### 2、BOM
