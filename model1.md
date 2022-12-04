@@ -63,11 +63,18 @@
     W3C 标准盒模型：box-sizing: content-box
     怪异盒模型：box-sizing: border-box
   `预处理器技术`
+    变量、嵌套、混合(mixin)、继承(extend)、运算、函数
   `Polyfill`
+    浏览器兼容
   `Postcss`
+    CSS后处理器框架
+    Autoprefixer
+    postcss-pxtorem
 
 ### 5、底层技术
   `浏览器缓存`
+    强制缓存
+    协商缓存
   `浏览器渲染`
 
 ### 6、正则表达式
