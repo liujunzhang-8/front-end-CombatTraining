@@ -56,10 +56,12 @@
  
 ### 4、CSS
   `Flex`
+    Flex: 一维布局，只能处理一个维度上的元素布局，一行或者一列
+  `Grid`
+    Grid：布局是将容器划分成了"行" 和 "列"，产生了一个个的网格
+  `盒模型`
     W3C 标准盒模型：box-sizing: content-box
     怪异盒模型：box-sizing: border-box
-  `Grid`
-  `盒模型`
   `预处理器技术`
   `Polyfill`
   `Postcss`
