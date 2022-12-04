@@ -20,6 +20,8 @@
 
   `navigation`
     通过 useragent 获取手机品牌型号
+    clipboard 粘贴图片
+    H5 地图定位：Navigation.Geolocation.getCurrentPosition()
   `screen`
   `history`
   `performance`
@@ -28,6 +30,9 @@
   `Proxy`
   `Reflect`
   `indexedDB`
+    浏览器提供的本地数据库，支持事务、索引
+    事务是用途？
+    事务中一系列的操作要么全部成功，要么一个都不成功，保证原子性和一致性
 ### 3、DOM
 
   `尺寸和定位`
