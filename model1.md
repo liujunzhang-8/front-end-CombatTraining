@@ -21,7 +21,11 @@
   `navigation`
     通过 useragent 获取手机品牌型号
     clipboard 粘贴图片
+    clipboardData.getData("text/plain") 文字内容
+    clipboardData.items 通过item.type 判断内容的类型
     H5 地图定位：Navigation.Geolocation.getCurrentPosition()
+    mediaDevices WebRTC Real-Time Communications
+    实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点的连接，实现视频流和音频流或着其它任意数据的传输
   `screen`
   `history`
   `performance`
