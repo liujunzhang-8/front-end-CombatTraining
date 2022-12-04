@@ -26,12 +26,19 @@
     H5 地图定位：Navigation.Geolocation.getCurrentPosition()
     mediaDevices WebRTC Real-Time Communications
     实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点的连接，实现视频流和音频流或着其它任意数据的传输
+    Web worker
+    基于web worker，独立于 JavaScript 主线程的独立线程，不会堵塞主线程
+    在 web worker 的基础上增加了离线缓存能力
+    充当服务器与浏览器之间的代理服务器，可以拦截全站的请求，并作出相应的动作。
+    支持推送
+    可以控制管理缓存的内容以及版本
   `screen`
   `history`
   `performance`
   `window`
   `生成随机数`
   `Proxy`
+    Proxy 对象用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如查找属性、赋值、枚举、函数调用等）
   `Reflect`
   `indexedDB`
     浏览器提供的本地数据库，支持事务、索引
@@ -40,11 +47,17 @@
 ### 3、DOM
 
   `尺寸和定位`
+    尺寸：style.width、getComputedStyle、offsetWidth、clientWidth、getBoudingClientRect
+    定位：offsetTop、offsetLeft
   `Fragment`
+    document.createDocumentFragment() 避免频繁大量的dom操作，提升性能
   `高性能DOM编程`
+    减少重排、批量修改DOM、事件委托(Event Delegation)
  
 ### 4、CSS
   `Flex`
+    W3C 标准盒模型：box-sizing: content-box
+    怪异盒模型：box-sizing: border-box
   `Grid`
   `盒模型`
   `预处理器技术`
