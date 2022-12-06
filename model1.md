@@ -105,5 +105,6 @@
 
 ### 第四课重点
   `PWA离线缓存`
+    workbox 缓存策略
   `JavaScript运行原理及内存管理`
   `模板引擎 & Reactivity`
