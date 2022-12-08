@@ -4,7 +4,9 @@
   #### Git功能场景实战
   #### 工作流
   #### Eslint与代码规范
+    Eslint Prettier
   #### CI持续集成
+    CI/CD 持续集成/部署
 ### 2、前端构建实战
   #### webpack基础与性能优化
   #### Lerna 在项目中应用
@@ -31,5 +33,9 @@
 
 ### 第一课重点
   `Git与工作流`
+    `Git flow`
+    `Github flow`
+    `Gitlab flow`
+    
   `Webpack基础`
   `Lerna包管理`
