@@ -13,7 +13,10 @@
     `Webpack配置: https://webpack.docschina.org/configuration/`
     `sourcemap`
     `libraryTarget`
+    `CommonJS规范`
   #### Lerna 在项目中应用
+    `Lerna 是一个管理工具，用于管理包含多个软件包（package）的 JavaScript 项目。`
+    `默认lerna有两种管理模式，固定模式和独立模式`
   #### 模块规范
   #### TreeShaking
   #### Webpack 插件开发实战
@@ -44,3 +47,15 @@
   `Webpack基础`
   `Lerna包管理`
     `模块管理`
+  `微前端 single-spa`
+    超大型系统开发痛点
+      1、模块之间耦合
+      2、模块上线影响范围大
+      3、代码合并难
+      4、不能并行迭代
+      5、沟通成本高
+    解决方案
+      1、主模块与子模块分离
+      2、独立开发
+      3、独立部署
+      4、独立运行
