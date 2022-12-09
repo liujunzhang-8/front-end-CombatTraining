@@ -59,3 +59,10 @@
       2、独立开发
       3、独立部署
       4、独立运行
+
+### 第二课重点
+  #### webpack 原理
+  #### Webpack Module Federation
+  #### Webpack 插件开发
+  #### Babel 基础与插件开发
+  #### TreeShaking
