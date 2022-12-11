@@ -92,3 +92,6 @@
     4、在控制台显示信息、从控制台接收输入
     5、在屏幕上显示（GUI）
     6、读写文件、网络、数据库
+  1、Rollup 只处理函数和import/export 变量
+  2、JavaScript 动态语言特性使得分析比较困难
+  3、Side Effect 广泛存在
