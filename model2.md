@@ -71,7 +71,24 @@
   `Remote` 被 Host 消费的 Webpack 构建
   `Host` 消费其他 Remote 的 Webpack 构建
   #### Webpack 插件开发
-    compiler
-    compilation
+  `compiler`
+  `compilation`
   #### Babel 基础与插件开发
+  `Babel 是一个 JavaScript 编译器。把最新版的javascript编译成当下可以执行的版本`
   #### TreeShaking
+  `Dead Code`
+    1、代码不会被执行，不可到达
+    2、代码执行的结果不会被用到
+    3、代码只会影响死变量(只写不读)
+  `ES6 module 特点`
+    1、只能作为模块顶层的语句出现
+    2、import 的模块名只能是字符串常量
+    3、import binding 是 immutable 的
+  `Side-effect 副作用`
+    在函数式编程中，如下的行为被称之为副作用
+    1、修改一个变量
+    2、修改一个对象的字段值
+    3、抛出异常
+    4、在控制台显示信息、从控制台接收输入
+    5、在屏幕上显示（GUI）
+    6、读写文件、网络、数据库
