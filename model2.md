@@ -62,7 +62,10 @@
 
 ### 第二课重点
   #### webpack 原理
+    Webpack 热更新
   #### Webpack Module Federation
   #### Webpack 插件开发
+    compiler
+    compilation
   #### Babel 基础与插件开发
   #### TreeShaking
