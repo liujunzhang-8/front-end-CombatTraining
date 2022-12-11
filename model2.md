@@ -64,6 +64,12 @@
   #### webpack 原理
     Webpack 热更新
   #### Webpack Module Federation
+  在客户端或服务器上动态运行另一个 bundle 的代码。
+  `动态` 按需，一个包拆开来加载其中一部分
+  `运行时` 浏览器里运行，非node编译
+  `另一个 bundle 的代码` 应用级 export 成员共享
+  `Remote` 被 Host 消费的 Webpack 构建
+  `Host` 消费其他 Remote 的 Webpack 构建
   #### Webpack 插件开发
     compiler
     compilation
