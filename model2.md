@@ -95,3 +95,17 @@
   1、Rollup 只处理函数和import/export 变量
   2、JavaScript 动态语言特性使得分析比较困难
   3、Side Effect 广泛存在
+
+### 第三课重点
+  #### 微前端应用
+  #### 微前端原理
+  #### shadowDom 和 WebComponents
+  `Import map`
+    UI组件库构建 组建打包
+    模块名映射
+    兜底方案：CDN加载失败时加载本地
+    内嵌模块
+  `System.js`
+  `Single-spa demo`
+  `Qiankun-demo`
+  `WebComponents`
