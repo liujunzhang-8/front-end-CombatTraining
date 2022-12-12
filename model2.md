@@ -105,6 +105,9 @@
     模块名映射
     兜底方案：CDN加载失败时加载本地
     内嵌模块
+    作用域
+    虚拟化
+    动态加载
   `System.js`
   `Single-spa demo`
   `Qiankun-demo`
