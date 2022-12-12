@@ -109,6 +109,8 @@
     虚拟化
     动态加载
   `System.js`
+    SystemJS 是一个插件化的、通用的模块加载器，它能在浏览器或者NodeJS动态加载模块，并且支持 CommonJS、AMD、全局对象模块和ES6模块
+
   `Single-spa demo`
   `Qiankun-demo`
   `WebComponents`
