@@ -110,7 +110,16 @@
     动态加载
   `System.js`
     SystemJS 是一个插件化的、通用的模块加载器，它能在浏览器或者NodeJS动态加载模块，并且支持 CommonJS、AMD、全局对象模块和ES6模块
-
   `Single-spa demo`
+    微服务
+      解耦合
+      复用
+      服务注册与发现
+      RPC
+    微前端
+      子应用注册
+      子应用生命周期
+      子应用是怎么控制路由？
+      应用之间如何通信
   `Qiankun-demo`
   `WebComponents`
