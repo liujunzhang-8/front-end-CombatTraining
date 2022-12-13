@@ -142,6 +142,16 @@
 ### 第四课重点
   #### 微前端
   #### Nginx配置详解
+    Nginx 架构 异步非阻塞方式 惊群现象
+    Nginx 配置
+      worker_processes: Work 进程数量，一般设置为核心数。work_processes auto
+      worker_connections:  `(Worker 进程数量 × 单个 Worker 进程的最大连接数) / 2`
+    http 块配置
+    反向代理: proxy_pass
+    负载均衡: upstream
+      内置策略: 轮询、权重、ip_hash
+      扩展策略: fair、url_hash
+    rewrite
   #### k8s简介
   #### Docker基础
   #### 前端工程化系统搭建
