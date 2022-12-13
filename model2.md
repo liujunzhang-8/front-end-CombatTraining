@@ -125,4 +125,7 @@
     single-spa 事件
     single-spa 状态管理
   `Qiankun-demo`
+    三合一：single-spa sandbox import-html-entry
+    HTML entry
+    JS 隔离
   `WebComponents`
