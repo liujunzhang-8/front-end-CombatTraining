@@ -128,7 +128,16 @@
     三合一：single-spa sandbox import-html-entry
     HTML entry
     JS 隔离
+    Sandbox
+    CSS隔离
+    Shadow DOM
+      影子DOM，潜藏在黑暗中的 DOM 结构
+      Shadow-dom 具有良好的密封性
+      shadow host: 宿主元素
+      shadow root: shadowDom 根节点
+      Contents: 内容
   `WebComponents`
+    组件化："高内聚，低耦合"，对内各个元素彼此紧密结合、相互依赖，对外和其他组件的联系最少且接口简单。
 
 ### 第四课重点
   #### 微前端
