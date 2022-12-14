@@ -154,4 +154,19 @@
     rewrite
   #### k8s简介
   #### Docker基础
+    镜像(Image)
+    容器(Container)
+    仓库(Repository)
+  容器管理
+  `使用docker container command`
+  镜像管理
+  `使用 docker image command`
+  常用命令
+  `docker build –t hub.docker.com/nginx:1.0.1 . --build-arg env=$env`
+  `docker run --rm -it -d hub.docker.com/nginx:1.0.1 –p –v`
+  `-d 后台运行`
+  `-it 可交互, 有终端`
+  `--rm 容器停止后自动删除`
+  `-p [宿主机端口:容器端口]         #端口映射`
+  `-v [宿主机目录:容器内目录]。  #挂载存储卷`
   #### 前端工程化系统搭建
