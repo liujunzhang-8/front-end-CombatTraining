@@ -178,3 +178,21 @@
   `镜像内外文件拷贝`
   `镜像导入`
   #### 前端工程化系统搭建
+
+### 第五课重点
+  #### Jest
+  `Jest｜令人愉快的Javascript测试框架`
+  Jest 单元测试
+  测试驱动 Test Drive Develop
+  #### Puppeteer & Cypress
+  `headless Chrome`
+  网页截图或者生成PDF
+  爬取 SPA 或 SSR 网站
+  UI 自动化测试，模拟表单提交，键盘输入，点击等行为
+  捕获网站的时间线，帮助诊断性能问题
+  创建一个最新的自动化测试环境，使用最新的js和最新的Chrome浏览器运行测试用例
+  测试 Chrome 扩展程序
+  `cupress`
+  `Sentry`
+  #### 自动化测试
+  #### 前端工程化体系搭建
