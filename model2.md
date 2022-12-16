@@ -204,3 +204,5 @@
   3、异常如何上报？
   4、为什么要SourceMap？
   5、SourceMap 怎么用？
+  跨域Script error 捕获
+  
