@@ -40,5 +40,10 @@
     OS模块
     全局对象
     path模块
+    事件 EventEmitter
+    Buffer
+    process
+    vm模块
+    定时器
   进程管理：
   网络通信：
