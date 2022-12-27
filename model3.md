@@ -45,5 +45,6 @@
     process
     vm模块
     定时器
+    crypto
   进程管理：
   网络通信：
