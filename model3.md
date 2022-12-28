@@ -54,5 +54,7 @@
 ### 第二课重点
   `应用服务器框架功能概览`
     express、koa、fastify、next
+    路由、视图、模型、服务、中间件、拦截器、数据库、缓存、队列、定时任务、日志、socket
   `Fastify 和 Nest功能实现分析`
   `中间件使用简介`
+    路由、log、queue、redis、mysql、mongodb、websocket、elastcsearch、schedule
