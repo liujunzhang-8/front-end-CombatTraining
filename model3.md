@@ -58,5 +58,6 @@
   `Fastify 和 Nest功能实现分析`
     fast-json-stringify: 通过 schema，加速系列化 2x faster than JSON.stringify()
     对象复用：对象池，减少创建时间
+    Nest：完美支持 TypeScript、面向AOP编程、支持 Typeorm、Node.js版的 Spring、构建微服务应用
   `中间件使用简介`
     路由、log、queue、redis、mysql、mongodb、websocket、elastcsearch、schedule
