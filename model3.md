@@ -59,5 +59,7 @@
     fast-json-stringify: 通过 schema，加速系列化 2x faster than JSON.stringify()
     对象复用：对象池，减少创建时间
     Nest：完美支持 TypeScript、面向AOP编程、支持 Typeorm、Node.js版的 Spring、构建微服务应用
+    守卫：控制请求是否由进入路由处理程序处理
+    拦截器：在函数执行之前/之后绑定额外的逻辑、转换从函数返回的结果、转换从函数抛出的异常、扩展基本函数行为、根据所选条件完全重写函数（例如,缓存目的）
   `中间件使用简介`
     路由、log、queue、redis、mysql、mongodb、websocket、elastcsearch、schedule
