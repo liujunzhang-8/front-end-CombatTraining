@@ -64,6 +64,8 @@
     管道：在调用控制器的路由处理程序之前，会插入一个管道，管道先拦截方法的调用参数，进行转换或者验证处理，然后用转换好或是验证好的参数调用原方法。
   `中间件使用简介`
     路由、log、queue、redis、mysql、mongodb、websocket、elastcsearch、schedule
+    MongoDB 是通用、基于文档的分布式数据库
+    redis：主从模式、哨兵sentinel模式、cluster模式
   `装饰器`
     Decorator
   `依赖注入/控制反转`：IOC
