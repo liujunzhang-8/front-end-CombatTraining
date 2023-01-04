@@ -91,5 +91,10 @@
       利：SEO time-to-content 更快的内容到达时间
       弊：服务端开销
       替换方案：预渲染、离线缓存
+    初始化：
+      SSR 应用会在Node启动时初始化一个renderer单例对象，renderer对象由vue-server-renderer库的createBundleRenderer函数创建，函数接收两个参数，serverBundle（服务端入口文件打包后的）内容和options配置
+      获取到serverBundle的入口文件代码并解析为入口函数，每次执行实例化Vue对象
+      实例化了render和templateRenderer对象，负责渲染Vue组件和组装HTML
+
     
 
