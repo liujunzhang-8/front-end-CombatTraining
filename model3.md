@@ -95,6 +95,18 @@
       SSR 应用会在Node启动时初始化一个renderer单例对象，renderer对象由vue-server-renderer库的createBundleRenderer函数创建，函数接收两个参数，serverBundle（服务端入口文件打包后的）内容和options配置
       获取到serverBundle的入口文件代码并解析为入口函数，每次执行实例化Vue对象
       实例化了render和templateRenderer对象，负责渲染Vue组件和组装HTML
+    渲染阶段：
+    内容输出阶段
+    客户端阶段
+  `Serverless`
+    Serverless = server + less
+    FaaS: Function as a Service Amazon Lambda, Google Cloud Function
+    BaaS: Backend as a Service  文件存储、数据库、实时通信、API
+    PaaS: Platform as a Service 阿里云、百度云、腾讯云、各种云
+    SaaS: Sofeware as a Service 在线办公、视频会议
+    
+
+
 
     
 
