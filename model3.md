@@ -107,7 +107,32 @@
   
 ### 第四课重点
   `应用服务器框架中间件`
+    TypeORM
+      定义Entity
+      获取链接：createConnection
+      获取仓库：connection.getRepository(entity)
+      增删改查
+    MongoDB
+      连接：初始化client
+      获取集合：createConnection
+      增删改查
+    Kafka
+      连接：初始化client
+      获取生产者：getProducer
+      创建Topic：createTopics
+      创建消息：send
+      获取消费者：getConsumer
+      添加Topic：createTopics
+      监听消息：on
+    Redis
+      连接：初始化client
+      增删改查
+    Elasticsearch
+      连接：初始化client
+      增删改查
   `TCP & UDP`
+    数据包
+      以太网数据包（packet）的大小是固定的，最初是1518字节，后来增加到1522字节。其中，1500字节是负载（payload），22字节是头信息（head）。
     TCP UDP
   `HTTP HTTP/2 HTTP/3`
     HTTP HTTP2 HTTP3
