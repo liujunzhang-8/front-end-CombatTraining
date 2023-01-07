@@ -156,4 +156,29 @@
       生成自签名证书
       生成带有ca签名的证书
   `HTTP HTTP/2 HTTP/3`
-    HTTP HTTP2 HTTP3
+    HTTPS
+      HTTP协议以明文的方式发送内容，不提供任何方式的数据加密
+      HTTPS在HTTP的基础上加入了SSL协议，SSL依靠证书来验证服务器的身份，并为浏览器和服务器之间的通信加密。
+      HTTP+SSL/TLS
+      SSL（Secure Socket Layer，安全套接字层）
+      TLS（Transport Layer Security，传输层安全）
+      HTTPS 的缺点
+        HTTPS协议多次握手，导致页面的加载时间延长近50%
+        HTTPS连接缓存不如HTTP高效，会增加数据开销和功耗
+        申请SSL证书需要钱，功能越强大的证书费用越高
+        SSL涉及到的安全算法会消耗CPU资源，对服务器资源消耗较大
+    HTTP2
+      Server Push
+        Non-push加载耗时
+        RTT + max(RTT, size(HTML)/BandWidth) + size(JS)/BandWidth
+        push加载耗时
+        RTT + size(HTML)/BandWidth + size(JS)/BW
+        所以决定推送是否有改善性能的衡量因素是 size(HTML/BandWidth)和 RTT 谁大
+      优点：
+        HTTP/2 采用二进制格式而非文本格式
+        HTTP/2是完全多路复用的，而非有序并阻塞的，只需一个连接即可实现并行
+        使用报头压缩，HTTP/2降低了开销
+        HTTP/2让服务器可以将响应主动"推送"到客户端缓存中。
+    HTTP3
+      QUIC (Quick UDP Internet Connections) 快速UDP互联网连接
+      QUIC的次要目标包括减少连接和传输延迟，在每个方向进行带宽估计以避免拥塞。它还将拥塞控制算法移动到用户空间，而不是内核空间，此外使用前向纠错（FEC）进行扩展，以在出现错误时进一步提高性能
