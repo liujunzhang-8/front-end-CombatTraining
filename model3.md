@@ -210,3 +210,31 @@
         更好的兼容性
 
     ZooKeeper注册与发现
+      `Node.js网关`
+        API网关是微服务架构中的一种服务，它为客户端提供共享层和API，以便与内部服务进行通信。API网关可以进行路由请求、转换协   议、聚合数据以及实现共享逻辑，如认证和速率限制器。API网关是微服务世界的入口点。
+        认证
+        数据汇总
+        序列化格式转换
+        协议转换
+      `网络应用`
+        Socket
+          WebSocket
+            WebSocket 是应用层第七层上的一个应用层协议，它必须依赖HTTP协议进行一次握手，握手成功后，数据就直接从TCP通道传输，与HTTP无关了。即：WebSocket分为握手和数据传输阶段，即进行了HTTP握手 + 双工的TCP连接。
+            传输阶段
+              WebSocket的数据传输是frame形式传输的，比如会将一条消息分为几个frame，按照先后顺序传输出去。
+              frame（帧）是WebSocket发送数据的基本单位。
+          socket.io
+            封装了WebSocket和轮询等方法，可以做到很好的兼容。
+        SSE
+          基于HTTP协议，使用流信息Streaming向浏览器推送消息
+          WebSocket：全双工通道，可以双向通信。
+          SSE：是单向通道，只能服务器向浏览器发送
+          SSE使用HTTP协议，现有的服务器软件都支持
+          WebSocket是一个独立协议
+          SSE属于轻量级，使用简单
+          WebSocket协议相对复杂
+          SSE默认支持断线重连
+          WebSocket需要自己实现
+          SSE一般只用来传送文本，二进制数据需要编码后传送
+          WebSocket默认支持传送二进制数据
+          SSE支持自定义发送的消息类型
