@@ -185,7 +185,11 @@
       队头阻塞
       ORTT 建链
         HTTPS：TCP握手和TLS握手至少2-3个RTT
+        DH(Diffie-Hellman)迪菲-赫尔曼算法 密钥交换
       QUIC 协议
         首次连接，客户端和服务端要使用1RTT进行密钥交换
       非首次连接
         实现ORTT的业务数据交互
+      连接迁移
+      
+
