@@ -225,7 +225,7 @@
               frame（帧）是WebSocket发送数据的基本单位。
           socket.io
             封装了WebSocket和轮询等方法，可以做到很好的兼容。
-        SSE
+        SSE(Server-Sent Events)
           基于HTTP协议，使用流信息Streaming向浏览器推送消息
           WebSocket：全双工通道，可以双向通信。
           SSE：是单向通道，只能服务器向浏览器发送
