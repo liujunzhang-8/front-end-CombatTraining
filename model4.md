@@ -23,8 +23,10 @@
   2、core核心
     `组件`、`全局API`、`observer`、`实例`、`工具类`、`vdom`
   3、platform核心
-
+    `web`、`compiler`、`runtime`、`server`、`工具类`
+    `weex`
   4、server服务端渲染
+    `bundle-renderer`、`optimizing-compiler`、`template-renderer`、`webpack-plugin`
   5、sfc单文件组件
     `解析器`
   6、shared共享
