@@ -31,3 +31,32 @@
     `解析器`
   6、shared共享
     `常量`、`工具类`
+  7、_init方法
+    `合并options`
+    `初始化生命周期`
+    `初始化事件`
+    `初始化render`
+    `生命周期回调beforeCreate`
+    `依赖注入`
+    `初始化state`
+    `初始化provider`
+    `生命周期回调created`
+
+### 响应式原理
+  1、Object.defineProperty
+    descriptor的属性描述符有两种形式，一种是数据描述符，另一种是存取描述符
+    `数据描述符`
+      configurable：数据是否可删除，可配置
+      enumerable：属性是否可枚举
+      value：属性值,默认为undefined
+      writable：属性是否可读写
+    `存取描述符`
+      configurable：数据是否可删除，可配置
+      enumerable：属性是否可枚举
+      get: 一个给属性提供 getter 的方法，如果没有 getter 则为 undefined
+      set: 一个给属性提供 setter 的方法，如果没有 setter 则为 undefined
+    `数组`
+      已知长度的数组的索引操作可以拦截。数组元素添加无法进行拦截，Vue做了特殊处理
+    `对象`
+      对象属性新增，删除无法拦截
+      Vue里使用set
