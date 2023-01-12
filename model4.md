@@ -62,3 +62,18 @@
       Vue里使用set
   2、Proxy
     真正在语言层面对数据拦截的定义，解决数组，对象某些情况下无法进行拦截的问题
+    `数组`
+      Proxy能完美的解决数组的监听检测问题，数组push、unshift、splice等不同方法，都能很好的拦截处理
+    `对象`
+      对象增加属性，删除属性，都能很好的拦截
+    `Proxy一共有13种拦截操作`
+      get、set、has、ownKeys、apply、construct、preventExtensions、isExtensible、deleteProperty、defineProperty、getPrototypeOf、setPrototypeOf、getOwnPropertyDescriptor
+    每个组件实例都有相应的 watcher 实例对象，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的setter被调用时，会通知 watcher 重新计算，从而致使它关联的组件得以更新
+    `observe`
+      遍历data中的属性，使用 Object.defineProperty 的 get/set 方法对其进行数据劫持
+    `dep`
+      每个属性拥有自己的消息订阅器 dep，用于存放所有订阅了该属性的观察者对象
+    `watcher`
+      观察者（对象），通过 dep 实现对响应属性的监听，监听到结果后，主要触发自己的回调进行响应。
+    `Watcher 和 Dep 的关系`
+      watcher 中实例化了 dep 并向 dep.subs 中添加了订阅者，dep 通过 notify 遍历了 dep.subs 通知每个 watcher 更新
