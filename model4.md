@@ -77,3 +77,14 @@
       观察者（对象），通过 dep 实现对响应属性的监听，监听到结果后，主要触发自己的回调进行响应。
     `Watcher 和 Dep 的关系`
       watcher 中实例化了 dep 并向 dep.subs 中添加了订阅者，dep 通过 notify 遍历了 dep.subs 通知每个 watcher 更新
+  3、Watcher
+    每个组件实例都对应一个 watcher 实例，它会在组件渲染的过程中把 "接触" 过的数据 property 记录为依赖。之后当依赖项的 setter 触发时，会通知 watcher，从而使它关联的组件重新渲染
+  4、Vue版本
+    `Runtime Only`
+    `Runtime + Compiler`
+    `Weex runtime`
+    `Webpack`: vue-loader 对.vue进行编译
+    `Compiler实时编译模板`
+  5、挂载过程
+  6、模版编译
+    `vue-template-compiler`
