@@ -88,3 +88,13 @@
   5、挂载过程
   6、模版编译
     `vue-template-compiler`
+    `HTMLParser` ——→ `ElementAST` ——→ `AST optimize` ——→ `Generate Code`
+    `HTMLParser`
+      开始标签，入栈
+      结束标签，出栈
+    `AST optimize`
+      optimizer的目的就是虚拟DOM对比时的剪枝。主要就是遍历一棵树，为静态子树标记tag
+    `Codegen`
+      Codegen是一个代码生成器。
+      功能是将AST树转化为一个字符串，字符串内容是一段可执行的JavaScript代码
+  
