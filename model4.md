@@ -99,3 +99,15 @@
       功能是将AST树转化为一个字符串，字符串内容是一段可执行的JavaScript代码
   7、Virtual DOM
     `Vnode`
+      用js模拟dom结构
+      通过js计算减少dom操作，节省性能
+      相对于传统方案全部删除重新渲染，vdom可以做修改前后对比，点对点的更新dom，避免任何多余的dom渲染
+      `create` ——→ `diff` ———→ `patch`
+      `patch原理`
+        patch(oldVnode,vnode,hydrating,removeOnly)
+        patch提供了5个生命周期钩子：
+          1、create：创建patch时
+          2、activate：激活组件时
+          3、update：更新节点时
+          4、remove：移除节点时
+          5、destroy：销毁节点时
