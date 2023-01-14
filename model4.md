@@ -187,4 +187,20 @@
     `Vue.compile(template)`: 在render函数中编译模板字符串。只在独立构建时有效。
     `Vue.observable(object)`: 让一个对象可响应。Vue内部会用它来处理data函数返回的对象。
     `Vue.version`: Vue安装版本号
-  
+  13、Vue3原理解析
+    `响应式API`
+      reactive：reactive 用于为对象添加响应式状态。接收一个js对象作为参数，返回一个具有响应式状态的副本。参数只能传入对象类型
+      ref：ref的本质是拷贝，与原始数据没有引用关系
+      toRef：toRef的本质是引用，与原始数据有关联
+      toRefs：作用其实和toRef类似，只不过toRef是一个个手动赋值，而toRefs是自动赋值
+      对比：
+        ref本质是拷贝，修改响应式数据不会影响原始数据
+        toRef的本质是引用关系，修改响应式数据会影响原始数据
+
+        ref数据发生变化，界面会自动更新
+        toRef当数据发生改变时，界面不会自动更新
+
+        toRef传参与ref不同
+        toRef接收两个参数，第一个参数是哪个对象，第二个参数是对象的哪个属性
+    `组合式API`
+
