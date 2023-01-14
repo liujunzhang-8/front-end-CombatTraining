@@ -115,4 +115,33 @@
     1、更新去重
     2、依赖收集
     3、准确定位需要更新组件
-    
+  9、Vite
+    `创建项目`
+      yarn create vite-app hellovite
+    `特性`
+      快速的冷启动
+      即时的模块热更新
+      真正的按需编译、
+    `主要流程`
+      1、浏览器import请求
+      2、Vite dev Server 中间拦截
+      3、请求地址处理
+      4、@vue/compiler-sfc编译Vue
+      5、返回结果处理
+      6、浏览器运行
+    `Vite HMR热更新`
+      服务端
+        `文件改变监听`
+        `找到依赖这个文件的vue`
+        `相关的Vue重新编译`
+        `编译结果和缓存结果对比`
+        `变化发送到客户端`
+        `更新缓存`
+      客户端
+        `vue`: reload、rerender
+        `style`: 更新、移除
+        `js-update`: 更新
+        `full-reload`: window.reload 刷新页面
+    浏览器里运行ES module 时大势所趋
+    HTTP/2 HTTP/3 普及能解决模块请求的性能问题
+    Vite的思想将彻底改变工程化构建
