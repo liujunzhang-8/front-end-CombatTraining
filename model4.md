@@ -172,3 +172,19 @@
       1、init 时调用initInjections获取inject项
       2、resolveInject，遍历所有的parent，寻找provide
       3、给Inject项添加响应式处理
+  12、全局API
+    `Vue.extend(options)`: 使用基础Vue构造器，创建一个"子类"
+    `Vue.nextTick([callback, context])`: 在下次DOM更新循环结束之后执行延迟回调
+    `Vue.set(target, propertyName/index, value)`: 向响应式对象添加一个属性，并确保这个新属性同样是响应式的，且触发视图更新
+    `Vue.delete(target, propertyName/index)`: 删除对象的属性。如果对象是响应式的，确保删除能触发更新视图
+    Object.defineProperty 无法监测对象属性的增加和删除，无法比较好处理数组元素变化。所以有了这些全局方法。
+    `Vue.directive(id, [definition])`: 注册或获取全局指令
+    `Vue.filter(id, [definition])`: 注册或获取全局过滤器
+    `Vue.component(id, [definition])`: 注册或获取全局组件，使用给定的id设置组件的名称
+    `Vue.use(plugin)`: 如果插件是一个对象，必须提供install方法。如果插件是一个函数，它会被作为install方法。install方法调用时，会将Vue作为参数传入。
+    当install方法被同一个插件多次调用，插件将只会被安装一次。
+    `Vue.mixin(mixin)`: 全局注册一个混入，影响注册之后所有创建的每个Vue实例。插件作者可以使用混入，向组件注入自定义的行为。不推荐在应用代码中使用。
+    `Vue.compile(template)`: 在render函数中编译模板字符串。只在独立构建时有效。
+    `Vue.observable(object)`: 让一个对象可响应。Vue内部会用它来处理data函数返回的对象。
+    `Vue.version`: Vue安装版本号
+  
