@@ -231,4 +231,10 @@
         需要在Proxy类的handlers的set中触发依赖的执行
         每次effect执行，都会重新将当前effect放到栈顶，然后执行effect回调再次取值的时候，再一次执行track收集依赖，不过第二次track的时候，对应的依赖集合中已经存在当前effect了，所以不会再次将当前effect添加进去了。
     `组合式API`
-
+      为什么要有组合API？
+        更好的逻辑复用与代码组织
+        更好的类型推导
+  14、组件开发实战
+    `TypeScript`
+    `Vue3组合API`
+    `组件开发`
