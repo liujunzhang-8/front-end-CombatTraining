@@ -219,5 +219,16 @@
           每次effect执行返回的都是全新的监听函数，即使传递的相同的函数
           对响应数据的原始数据的操作，不会触发监听函数
           通过stop api，终止监听函数继续监听
+        effect如何收集依赖
+          track
+            检查当前激活的activeEffect
+            检查targetMap中有没有当前target
+            没有则添加一个target，然后创建一个depMap
+            depMap里添加依赖
+            get、has、iterate 三种类型的读取对象会触发track
+        effect在执行的时候会在取值之前将自己放入到effectStack栈顶，同时将自己标记为activeEffect，以便进行依赖收集与reactive进行关联
+        在取值的时候开始收集依赖，所以需要在取值之前将依赖的effect放到栈顶并标识为activeEffect，执行effect回调取值的时候会在Proxy的handlers的get中进行取值，所以我们需要在这里进行依赖收集
+        需要在Proxy类的handlers的set中触发依赖的执行
+        每次effect执行，都会重新将当前effect放到栈顶，然后执行effect回调再次取值的时候，再一次执行track收集依赖，不过第二次track的时候，对应的依赖集合中已经存在当前effect了，所以不会再次将当前effect添加进去了。
     `组合式API`
 
