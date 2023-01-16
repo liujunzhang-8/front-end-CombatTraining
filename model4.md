@@ -210,5 +210,14 @@
         watch侦听特定的data源，并在单独的回调函数中副作用。默认情况下，它也是惰性的。
       watchEffect
         在响应式地跟踪其依赖项时立即运行一个函数，并在更改依赖项时重新运行它
+      computed
+        给computed函数传递一个getter方法创建immutable reactive ref object
+        给computed函数传递一个有get和set方法的对象来创建一个writable ref object
+      effect
+        接受一个函数，返回一个新的监听函数reactiveEffect。若监听函数内部依赖了reactive数据，当这些数据变更时会触发监听函数。
+        effect 作为reactive 的核心，主要负责收集依赖，更新依赖
+          每次effect执行返回的都是全新的监听函数，即使传递的相同的函数
+          对响应数据的原始数据的操作，不会触发监听函数
+          通过stop api，终止监听函数继续监听
     `组合式API`
 
