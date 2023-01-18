@@ -258,3 +258,8 @@
         声明一个自定义属性，属性名需要以两个减号(--)开始
       `currentColor`
         currentColor表示当前的标签所继承的文字颜色
+      `父子组件通信 provide/inject`
+      `响应式 provide/inject`
+      `props 类型/检验`
+      `space`
+        renderSlot($slots, 'default', {key: 0}, () => [])
