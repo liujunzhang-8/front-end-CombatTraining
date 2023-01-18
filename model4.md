@@ -263,3 +263,9 @@
       `props 类型/检验`
       `space`
         renderSlot($slots, 'default', {key: 0}, () => [])
+        创建节点
+        h(标签, {属性}, 内容)
+        h(标签, {属性}, [可以继续嵌套h()])
+        createVNode(标签, {属性}, 内容)
+        createVNode(标签, {属性}, [可以继续嵌套createVNode()])
+        createVNode()函数的功能比h()函数要多且做了性能优化，渲染节点的速度也更快
